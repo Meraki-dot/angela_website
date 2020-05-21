@@ -1,0 +1,86 @@
+@import '../../sass/sass-themes/theme';
+/* Position and sizing of burger button */
+.bm-burger-button {
+    position: fixed;
+    width: 1.6em;
+    height: 1.3em;
+    top: 1.35em;
+    right: 1em;
+  
+    & button {
+      outline: none;
+    }
+  }
+  
+  /* Color/shape of burger icon bars */
+  .bm-burger-bars {
+    background: $secondary-text;
+    border-radius: 5em;
+  }
+  
+  .bm-menu-wrap {
+    position: fixed;
+    height: 100%;
+  }
+  
+  
+  /* Position and sizing of clickable cross button */
+  .bm-cross-button {
+    margin-top: 7em;
+    margin-right: 3em;
+    & span {
+      & span {
+        height: 20px !important;
+        width: 1.5px !important;
+      }
+    }
+  }
+  
+  /* Color/shape of close button cross */
+  .bm-cross {
+    background: #bdc3c7;
+  }
+  
+  /* General sidebar styles */
+  .bm-menu {
+    background: $background;
+    padding: 2.5em 1.5em 0;
+    font-size: 1.15em;
+    top: 0;
+    z-index: 5; 
+  
+    & .bm-item-list {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+  
+      & #menu-container {
+        display: flex !important;
+        justify-content: space-evenly;
+        flex-direction: column;
+        height: 70%;
+        
+        
+        &:focus {
+          outline: none;
+        }
+  
+        & a {
+          @include reg-text;
+          color: $primary-text;
+          cursor: pointer;
+          margin-bottom: 2em;
+          margin-left: 2.5em;
+          text-decoration: none;
+        }
+      }
+  
+    }
+  }
+  
+  .bm-overlay {
+    display: block;
+    background: $background !important;
+    z-index: 5;
+  }

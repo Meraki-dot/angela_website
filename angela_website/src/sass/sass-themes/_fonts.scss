@@ -1,0 +1,12 @@
+@font-face {
+  font-family: "Noe Display";
+  src: local("Noe Display"), url(../../fonts/Noe-Display-Medium.woff) format("woff");
+}
+
+@mixin header-text {
+    font-family: 'Noe Display';
+}
+
+@mixin reg-text {
+  font-family: 'neue-haas-unica', sans-serif;
+}

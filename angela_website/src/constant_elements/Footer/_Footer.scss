@@ -1,0 +1,27 @@
+@import '../../sass/sass-themes/theme';
+
+#footer-container {
+    width: 90%;
+    height: 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+
+    #copyright {
+        margin: 0;
+        @include reg-text;
+        color: $sub-text;
+        font-size: 11px;
+    }
+
+    #social-icons {
+        display: flex;
+        width: 50px;
+        align-items: center;
+        justify-content: space-between;
+
+        img {
+            max-width: 15px;
+        }
+    }
+}

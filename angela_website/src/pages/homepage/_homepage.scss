@@ -1,0 +1,58 @@
+@import "../../sass/sass-themes/theme";
+
+#home-container {
+  height: 100vh;
+  background-color: $background;
+
+  #home-menu {
+    width: 110%;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  #hero-container {
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    #home-image-1 {
+      position: relative;
+
+      img {
+        max-height: 250px;
+        position: absolute;
+        bottom: -80px;
+        left: 5px;
+      }
+    }
+
+    #hero-title {
+      @include header-text;
+      color: $primary-text;
+      font-size: 55px;
+      text-align: center;
+      z-index: 2;
+      margin: 0;
+    }
+
+    #hero-sub {
+      @include reg-text;
+      color: $sub-text;
+      font-size: 16px;
+      font-weight: 100;
+      margin-top: 3px;
+    }
+
+    #home-image-2 {
+        position: relative;
+      img {
+        max-height: 220px;
+        position: absolute;
+        top: 30px;
+        right: -30px;
+      }
+    }
+  }
+}

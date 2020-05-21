@@ -1,0 +1,68 @@
+@import "../../sass/sass-themes/theme";
+
+#project_overview-container {
+  .list-project {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+
+    p {
+        font-size: 26px;
+        @include reg-text;
+        color: $secondary-text;
+        font-weight: 700;
+        margin-top: 8px;
+        text-align: center;
+    }
+
+  }
+
+  #project-1 {
+    img {
+      max-height: 225px;
+      filter: grayscale(100%);
+      opacity: 0.75;
+      z-index: 0;
+
+      &:hover {
+        animation-name: img-hover;
+        animation-duration: 0.25s;
+        transition-timing-function: ease-out;
+        transition-timing-function: ease-in;
+        animation-fill-mode: forwards;
+      }
+    }
+  }
+
+  #project-2 {
+    img {
+      max-height: 225px;
+      filter: grayscale(100%);
+      opacity: 0.75;
+      z-index: 0;
+
+      &:hover {
+        animation-name: img-hover;
+        animation-duration: 0.25s;
+        transition-timing-function: ease-out;
+        transition-timing-function: ease-in;
+        animation-fill-mode: forwards;
+      }
+    }
+  }
+}
+
+//animations for images
+@keyframes img-hover {
+  from {
+    filter: grayscale(100%);
+    opacity: 0.75;
+  }
+  to {
+    filter: none;
+    opacity: 1;
+  }
+}
