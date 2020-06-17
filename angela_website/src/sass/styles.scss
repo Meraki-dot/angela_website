@@ -1,8 +1,12 @@
-@import '../constant_elements/Navbar/Navbar';
-@import '../pages/homepage/_homepage';
-@import '../pages/project_overview/_Project_Overview';
+@import "../constant_elements/Navbar/Navbar";
+@import "../pages/homepage/_homepage";
+@import "../pages/project_overview/_Project_Overview";
+@import "../pages/Projects/Pasadena_pups/Pasadena_Pups";
 
-html, body, #root, .main-container {
+html,
+body,
+#root,
+.main-container {
     padding: 0;
     margin: 0;
 }
@@ -12,19 +16,20 @@ html, body, #root, .main-container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background: $background;;
+    background: $background;
 }
 
 .nav-container {
-    width: 95%;
+    width: 100%;
     display: flex;
     justify-content: space-between;
-    margin-top: 8px;
+    padding-top: 8px;
     background-color: $background;
     position: fixed;
-
+    z-index: 1;
     p {
         font-size: 16px;
+        margin-left: 5%;
         @include header-text;
         color: $primary-text;
     }
@@ -35,6 +40,8 @@ html, body, #root, .main-container {
     @include header-text;
     color: $primary-text;
     margin-top: 110px;
+    width: 13.75rem;
+    text-align: center;
 }
 
 a {
