@@ -1,5 +1,6 @@
 import React from 'react';
 import Home_navbar from '../../constant_elements/Navbar/Navbar';
+import { Link } from "react-router-dom";
 import Footer from '../../constant_elements/Footer/Footer';
 
 const Homepage = () => {
@@ -18,11 +19,16 @@ const Homepage = () => {
                 <p id="hero-sub">
                     ARTIST - PAINTER
                 </p>
+                <div className="hero-button-container">
+                    <Link to="/projects">See Projects</Link>
+                </div>
                 <div id="home-image-2">
                     <img src={require('./Black_dog_black_white_tint.png')} alt="Black dog"/>
                 </div>
             </div>
-            <Footer />
+            <div className="footer-holder">
+                <Footer />
+            </div>
         </div>
     )
 }

@@ -1,0 +1,66 @@
+@import "../../sass/sass-themes/theme";
+
+#pieces-container {
+    min-height: 100vh;
+    height: 100%;
+    .main-image {
+        max-width: 320px;
+    }
+    .piece-details {
+        margin: 0 7%;
+        p {
+            text-align: left;
+        }
+        .piece-title {
+            @include reg-text;
+            font-size: 20px;
+            font-weight: 600;
+            color: $primary-text;
+        }
+        .piece-materials {
+            @include reg-text;
+            font-size: 12px;
+            color: $sub-text;
+        }
+        .piece-story {
+            @include reg-text;
+            font-size: 16px;
+            color: $secondary-text;
+            max-width: 320px;
+        }
+    }
+    .back-button-container {
+        width: 85.5%;
+        display: flex;
+        justify-content: flex-start;
+        margin-top: 2rem;
+    }
+    .back-button {
+        text-decoration: none;
+        color: $primary-text;
+        border: 1px solid $primary-text;
+        padding: 0.75rem 1rem;
+        @include reg-text;
+        &:hover {
+            transition: ease-in-out .25s;
+            background-color: $primary-text;
+            color: white;
+        }
+    }
+    .pieces-nav {
+        margin-top: 20%;
+        margin-bottom: 2rem;
+        width: 85%;
+        display: flex;
+        justify-content: space-between;
+        background-color: $background;
+        @include reg-text;
+        a {
+            color: $primary-text;
+            &:hover {
+                color: lightgrey;
+                transition: ease-in-out;
+            }
+        }
+    }
+}

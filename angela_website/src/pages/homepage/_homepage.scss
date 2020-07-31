@@ -1,7 +1,8 @@
 @import "../../sass/sass-themes/theme";
 
 #home-container {
-  height: 100vh;
+  min-height: 100vh;
+  height: 100%;
   background-color: $background;
 
   #home-menu {
@@ -45,8 +46,23 @@
       margin-top: 3px;
     }
 
+    .hero-button-container {
+      margin-top: 1rem;
+      a {
+        color: $secondary-text;
+        border: 1px solid $secondary-text;
+        @include reg-text;
+        padding: 0.5rem 1rem;
+        &:hover {
+          transition: ease-in-out 0.25s;
+          background-color: $primary-text;
+          color: white;
+        }
+      }
+    }
+
     #home-image-2 {
-        position: relative;
+      position: relative;
       img {
         max-height: 220px;
         position: absolute;
@@ -54,5 +70,11 @@
         right: -30px;
       }
     }
+  }
+  .footer-holder {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
   }
 }
